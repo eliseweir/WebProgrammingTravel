@@ -1,0 +1,61 @@
+body {
+    color: white;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#hero {
+    background-image: url("./images/hotel_overview.jpg");
+    background-size: cover;
+    background-color: #0c3d5e;
+    background-blend-mode: overlay;
+    padding: 0rem 1rem 3rem 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e1b411;
+    font-weight: bold;
+}
+
+#welcome-heading {
+    padding: 3rem 0px;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+#welcome-heading p {
+    width: 70%;
+}
+
+button {
+    border: 1px solid #e1b411;
+    color: white;
+    background-color: #0c3d5e;
+    border-radius: 4px;
+}
