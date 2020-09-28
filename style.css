@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 #logo {
@@ -69,15 +70,30 @@ button {
     display: inline-flex;
 }
 
-#enjoy, #booking {
-    width: 50%;
+#enjoy {
+    width: 40%;
     padding: 1rem;
 }
 
 #booking {
+    width: 60%;
+    padding: 1rem;
     background-color: lightgray;
     display: inline-flex;
     justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+#booking h4 {
+    text-align: center;
+}
+
+.input {
+    background-color: white;
+    width: 5rem;
+    padding: 3rem 0rem;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .room {
@@ -95,9 +111,45 @@ button {
     margin: 0px;
 }
 
-.room-description {
+.description {
     width: 50%;
-    align-items:
+    padding: 1rem;
+}
+
+.offer {
+    background-color: #3f847d;
+    color: #0c3d5e;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.offer figure {
+    display: flex;
+    width: 50%;
+    margin: 0px;
+}
+
+#contact {
+    display: flex;
+    background-color: #e1b411;
+}
+
+#contact figure {
+    display: flex;
+    width: 60%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#contact #form {
+    width: 40%;
+    padding: 1rem;
+}
+
+#contact textarea {
+    width: 100%;
+    height: 7rem;
 }
 
 footer {
@@ -114,18 +166,18 @@ footer img {
     width: 100px;
 }
 
-footer figure, div {
+footer div {
     padding: 1rem;
 }
 
-footer li {
-    list-style: none;
+footer ul {
+    padding: 0;
+    list-style-type: none;
 }
 
 footer li a {
     text-decoration: none;
     color: white;
-    text-justify: left;
 }
 
 #copyright {
