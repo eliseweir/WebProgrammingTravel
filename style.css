@@ -42,12 +42,6 @@ header {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
-    html {
-        font-size: 12px;
-    }
-}
-
 #welcome-heading {
     padding: 3rem 0px;
     width: 400px;
@@ -136,8 +130,13 @@ button {
 }
 
 #contact figure {
+    padding: 0px;
+    margin: 0px;
+}
+
+#contact img {
     display: flex;
-    width: 60%;
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
@@ -182,4 +181,10 @@ footer li a {
 
 #copyright {
     font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
 }
