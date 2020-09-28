@@ -1,5 +1,4 @@
 body {
-    color: white;
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -13,10 +12,12 @@ body {
 
 #hero {
     background-image: url("./images/hotel_overview.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #0c3d5e;
     background-blend-mode: overlay;
+    background-size: cover;
     padding: 0rem 1rem 3rem 1rem;
+    color: white;
 }
 
 header {
@@ -25,19 +26,25 @@ header {
     align-items: center;
 }
 
-ul {
+#hero ul {
     display: flex;
 }
 
-li {
+#hero li {
     padding: 1rem;
     list-style-type: none;
 }
 
-a {
+#hero a {
     text-decoration: none;
     color: #e1b411;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 #welcome-heading {
@@ -58,4 +65,49 @@ button {
     color: white;
     background-color: #0c3d5e;
     border-radius: 4px;
+}
+
+#discover {
+    display: inline-flex;
+}
+
+#enjoy {
+    width: 50%;
+    margin: 1rem;
+}
+
+#booking {
+    width: 50%;
+    padding: 1rem;
+    background-color: lightgray;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #0c3d5e;
+    color: white;
+}
+
+#top-footer {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 100px;
+}
+
+figure, footer div {
+    padding: 1rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    text-justify: left;
 }
