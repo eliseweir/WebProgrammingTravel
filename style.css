@@ -58,6 +58,7 @@ button {
     color: white;
     background-color: #0c3d5e;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 #discover {
@@ -187,5 +188,14 @@ footer li a {
 @media only screen and (max-width: 600px) {
     html {
         font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 24px;
+    }
+    #logo {
+        width: 200px;
     }
 }
